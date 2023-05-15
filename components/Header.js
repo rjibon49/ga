@@ -91,14 +91,14 @@ const Header = () => {
                                 </Link>
                                 <ul class="dropdown-menu">
                                     <li><Link class="dropdown-item" href="/services/grant_writing_service">Grant Writing Services</Link></li>
-                                    <li><Link class="dropdown-item" href="#">Financial and Managerial Accounting Services</Link></li>
-                                    <li><Link class="dropdown-item" href="#">Strategic Planning Services</Link></li>
-                                    <li><Link class="dropdown-item" href="#">Strategic Business Unit (SBU) Planning & Business Management</Link></li>
-                                    <li><Link class="dropdown-item" href="#">Business Valuation Services</Link></li>
-                                    <li><Link class="dropdown-item" href="#">Financial Consulting</Link></li>
-                                    <li><Link class="dropdown-item" href="#">Financial Management Services</Link></li>
-                                    <li><Link class="dropdown-item" href="#">Data Analysis Services</Link></li>
-                                    <li><Link class="dropdown-item" href="#">Implementation of new accounting system (QB, Lawson, MIP, FE, or others)</Link></li>
+                                    <li><Link class="dropdown-item" href="/services/financial_and_managerial_accounting_service">Financial and Managerial Accounting Services</Link></li>
+                                    <li><Link class="dropdown-item" href="/services/strategic_planning_services">Strategic Planning Services</Link></li>
+                                    <li><Link class="dropdown-item" href="/services/strategic_business_unit">Strategic Business Unit (SBU) Planning & Business Management</Link></li>
+                                    <li><Link class="dropdown-item" href="/services/business_valuation_services">Business Valuation Services</Link></li>
+                                    <li><Link class="dropdown-item" href="/services/financial_consulting">Financial Consulting</Link></li>
+                                    <li><Link class="dropdown-item" href="/services/financial_management_services">Financial Management Services</Link></li>
+                                    <li><Link class="dropdown-item" href="/services/data_analysis_services">Data Analysis Services</Link></li>
+                                    <li><Link class="dropdown-item" href="/services/implementation_of_new_accounting_system">Implementation of new accounting system (QB, Lawson, MIP, FE, or others)</Link></li>
                                 </ul>
                             </li>
                             <li class="navItem">

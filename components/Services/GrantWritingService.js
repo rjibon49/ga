@@ -18,7 +18,7 @@ const GrantWritingService = () => {
                             <Image src={wrIcon} alt='grant Writing icon' className='serviceImage'/>
                         </div>
                         <div>
-                            <h3 className='semibolTextLg mb-2'>Grant Writing Services:</h3>
+                            <h3 className='semibolTextLg mb-4'>Grant Writing Services:</h3>
                             <li className='semiRegulerTextmd'>-Grant Research</li>
                             <li className='semiRegulerTextmd'>-Grant Proposals</li>
                             <li className='semiRegulerTextmd'>-Assessment and Planning</li>
