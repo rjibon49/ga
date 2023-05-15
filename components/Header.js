@@ -5,8 +5,6 @@ import notify from '../public/src/images/icon/notification.png';
 import cart from '../public/src/images/icon/shoppingCart.png';
 import logo from '../public/src/images/logo.png';
 import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell } from '@fortawesome/free-regular-svg-icons';
 import Link from 'next/link';
 
 const Header = () => {
@@ -67,13 +65,13 @@ const Header = () => {
                                 </li>
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 menuBarItem">
                                     <li class="navItem">
-                                    <a class="navLink active" aria-current="page" href="#">Home</a>
+                                        <Link class="navLink active" aria-current="page" href="#">Home</Link>
                                     </li>
                                     <li class="navItem">
-                                    <a class="navLink" href="#">Link</a>
+                                        <Link class="navLink" href="#">Link</Link>
                                     </li>
                                     <li class="navItem">
-                                    <a class="navLink disabled">Disabled</a>
+                                        <Link class="navLink disabled" href="#">Disabled</Link>
                                     </li>
                                 </ul>
                                 <li className="nav-item">
@@ -87,23 +85,36 @@ const Header = () => {
                 </nav>
                     <nav className='navbar navbar-expand-lg menuBarItem2'>
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="navItem">
-                                <a class="navLink"  href="#">Service</a>
+                            <li class="nav-item dropdown">
+                                <Link class="navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Service
+                                </Link>
+                                <ul class="dropdown-menu">
+                                    <li><Link class="dropdown-item" href="/services/grant_writing_service">Grant Writing Services</Link></li>
+                                    <li><Link class="dropdown-item" href="#">Financial and Managerial Accounting Services</Link></li>
+                                    <li><Link class="dropdown-item" href="#">Strategic Planning Services</Link></li>
+                                    <li><Link class="dropdown-item" href="#">Strategic Business Unit (SBU) Planning & Business Management</Link></li>
+                                    <li><Link class="dropdown-item" href="#">Business Valuation Services</Link></li>
+                                    <li><Link class="dropdown-item" href="#">Financial Consulting</Link></li>
+                                    <li><Link class="dropdown-item" href="#">Financial Management Services</Link></li>
+                                    <li><Link class="dropdown-item" href="#">Data Analysis Services</Link></li>
+                                    <li><Link class="dropdown-item" href="#">Implementation of new accounting system (QB, Lawson, MIP, FE, or others)</Link></li>
+                                </ul>
                             </li>
                             <li class="navItem">
-                                <a class="navLink" href="/instructor">Instructors</a>
+                                <Link class="navLink" href="/instructor">Instructors</Link>
                             </li>
                             <li class="navItem">
-                                <a class="navLink ">Courses</a>
+                                <Link class="navLink " href="#">Courses</Link>
                             </li>
                             <li class="navItem">
-                                <a class="navLink ">Career</a>
+                                <Link class="navLink " href="#">Career</Link>
                             </li>
                             <li class="navItem">
-                                <a class="navLink ">Volunteer</a>
+                                <Link class="navLink " href="#">Volunteer</Link>
                             </li>
                             <li class="navItem">
-                                <a class="navLink ">Donate</a>
+                                <Link class="navLink " href="#">Donate</Link>
                             </li>
                         </ul>
                     </nav>

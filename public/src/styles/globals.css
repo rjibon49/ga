@@ -25,19 +25,40 @@ img {
   line-height: 130%;
   color: #FEFEFE;
 }
-.regularText {
+.extraBoldColor {
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  color: #FEFEFE;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 120%;
+  color: #4D8044;
 }
-.regularTextDark {
+.boldTextDark {
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
   color: #222222;
+}
+.semiBoldTextXl {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  color: #222222;
+}
+.semibolTextLg {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  color: #222222;
+}
+.semibolTextLgLight {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  color: #FEFEFE;
 }
 .regularTextLg {
   font-style: normal;
@@ -53,10 +74,10 @@ img {
   line-height: 140%;
   color: #222222;
 }
-.semiBoldTextXl {
+.semiRegulerTextmd {
   font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 130%;
   color: #222222;
 }
@@ -74,35 +95,6 @@ img {
   line-height: 130%;
   color: #FFFFFF;
 }
-.semibolTextLg {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 130%;
-  color: #222222;
-}
-.semibolTextLgLight {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 130%;
-  color: #FEFEFE;
-}
-
-.boldTextDark {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 120%;
-  color: #222222;
-}
-.extraBoldColor {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 120%;
-  color: #4D8044;
-}
 .semibolTextSmLight {
   font-style: normal;
   font-weight: 400;
@@ -117,8 +109,25 @@ img {
   line-height: 140%;
   color: #222222;
 }
+.regularText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FEFEFE;
+}
+.regularTextDark {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #222222;
+}
+
 
 /* ==== Color Style ==== */
+/* ============================ */
+
 .headingBg {
   background: #F3F4F3;
   height: 100px;
@@ -339,7 +348,9 @@ img {
   border: 1px solid #222222;
   border-radius: 10px;
 }
-
+.serviceImage {
+  margin: -50px 0px 40px 0px;
+}
 /* ==== Search Style ==== */
 
 .search {
@@ -628,6 +639,9 @@ img {
  .loginImage {
   display: none;
  }
+ .serviceImage {
+  margin: 10px 0px 40px 0px;
+}
 }
 @media (min-width: 321px) and (max-width: 480px) {
   .bannerBg {
