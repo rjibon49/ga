@@ -208,7 +208,7 @@ img {
   font-weight: 600;
   font-size: 24px;
   line-height: 120%;
-  width: 331px;
+  width: 295px;
   height: 57px;
 }
 .subsBtn {
@@ -309,6 +309,9 @@ img {
   transition: 0.2s ease-in-out;
   background: #24B273;
 }
+.loginBtnbottom {
+  display: none;
+}
 .loginLinkBottom {
   display: none;
   margin-left: 35px;
@@ -330,6 +333,9 @@ img {
 }
 .menuBarItem {
   display: none !important;
+}
+.navItem {
+
 }
 .navLink {
   margin-left: 25px;
@@ -612,6 +618,15 @@ img {
   .loginLink {
     display: none;
   }
+  .loginBtnbottom {
+    display: block;
+    border: 1px solid #24B273;
+    border-radius: 10px;
+    padding: 15px 50px;
+    text-align: center;
+    width: 240px;
+    margin: 10px auto;
+}
   .loginLinkBottom {
     display: contents;
   }
@@ -641,6 +656,13 @@ img {
  }
  .serviceImage {
   margin: 10px 0px 40px 0px;
+}
+.navItem {
+  text-align: center;
+  padding: 5px 0px;
+  /* border: 1px solid #222222;
+  border-radius: 5px; */
+  margin: 2px 0;
 }
 }
 @media (min-width: 321px) and (max-width: 480px) {

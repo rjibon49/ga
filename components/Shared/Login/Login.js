@@ -20,7 +20,7 @@ const Login = () => {
                             <h3 className='semiBoldTextXl'>Log In</h3>
                             <h5 className='semibolTextmd'>Account Type</h5>
                         </div>
-                        <div className='mt-5'>
+                        <div className='mt-5 gaitem'>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
                                 <label class="form-check-label" for="inlineRadio1">Student</label>

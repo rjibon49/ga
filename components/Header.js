@@ -40,8 +40,8 @@ const Header = () => {
                                     <li className='topBarIcon'><FontAwesomeIcon icon={faBell} className='' /></li> */}
                                     <li className='topBarIcon'><Image src={cart} alt='Cart Icon' className='' /></li>
                                     <li className='topBarIcon'><Image src={notify} alt='Cart Icon' className='' /></li>
-                                    <Link href="/login" className='topBarInfo'><span className=''>Login</span></Link>
-                                    <Link href="/register" className='topBarInfo'><span className=''>Register</span></Link>
+                                    <Link href="/login" className='topBarInfo'>Login</Link>
+                                    <Link href="/register" className='topBarInfo'>Register</Link>
                                 </ul>
                             </div>
                         </div>
@@ -64,20 +64,50 @@ const Header = () => {
                                     <Link className="loginLink" href="#">Client Portal</Link>
                                 </li>
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 menuBarItem">
-                                    <li class="navItem">
-                                        <Link class="navLink active" aria-current="page" href="#">Home</Link>
+                                    <li class="navItem dropdown">
+                                        <Link class="navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Service
+                                        </Link>
+                                        <ul class="dropdown-menu">
+                                            <li><Link class="dropdown-item" href="/services/grant_writing_service">Grant Writing Services</Link></li>
+                                            <hr className="dropdown-divider" />
+                                            <li><Link class="dropdown-item" href="/services/financial_and_managerial_accounting_service">Financial and Managerial Accounting</Link></li>
+                                            <hr className="dropdown-divider" />
+                                            <li><Link class="dropdown-item" href="/services/strategic_planning_services">Strategic Planning Services</Link></li>
+                                            <hr className="dropdown-divider" />
+                                            <li><Link class="dropdown-item" href="/services/strategic_business_unit">Strategic Business Unit</Link></li>
+                                            <hr className="dropdown-divider" />
+                                            <li><Link class="dropdown-item" href="/services/business_valuation_services">Business Valuation</Link></li>
+                                            <hr className="dropdown-divider" />
+                                            <li><Link class="dropdown-item" href="/services/financial_consulting">Financial Consulting</Link></li>
+                                            <hr className="dropdown-divider" />
+                                            <li><Link class="dropdown-item" href="/services/financial_management_services">Financial Management</Link></li>
+                                            <hr className="dropdown-divider" />
+                                            <li><Link class="dropdown-item" href="/services/data_analysis_services">Data Analysis Services</Link></li>
+                                            <hr className="dropdown-divider" />
+                                            <li><Link class="dropdown-item" href="/services/implementation_of_new_accounting_system">Implementation of new accounting</Link></li>
+                                        </ul>
                                     </li>
                                     <li class="navItem">
-                                        <Link class="navLink" href="#">Link</Link>
+                                        <Link class="navLink" href="/instructor">Instructors</Link>
                                     </li>
                                     <li class="navItem">
-                                        <Link class="navLink disabled" href="#">Disabled</Link>
+                                        <Link class="navLink " href="#">Courses</Link>
+                                    </li>
+                                    <li class="navItem">
+                                        <Link class="navLink " href="#">Career</Link>
+                                    </li>
+                                    <li class="navItem">
+                                        <Link class="navLink " href="#">Volunteer</Link>
+                                    </li>
+                                    <li class="navItem">
+                                        <Link class="navLink " href="#">Donate</Link>
                                     </li>
                                 </ul>
-                                <li className="nav-item">
+                                <li className="nav-item loginBtnbottom">
                                     <Link className="loginLinkBottom" href="#">Start Learning</Link>
                                 </li>
-                                <li className="nav-item">
+                                <li className="nav-item loginBtnbottom">
                                     <Link className="loginLinkBottom" href="#">Client Portal</Link>
                                 </li>
                             </div>
@@ -89,16 +119,24 @@ const Header = () => {
                                 <Link class="navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Service
                                 </Link>
-                                <ul class="dropdown-menu">
-                                    <li><Link class="dropdown-item" href="/services/grant_writing_service">Grant Writing Services</Link></li>
-                                    <li><Link class="dropdown-item" href="/services/financial_and_managerial_accounting_service">Financial and Managerial Accounting Services</Link></li>
-                                    <li><Link class="dropdown-item" href="/services/strategic_planning_services">Strategic Planning Services</Link></li>
-                                    <li><Link class="dropdown-item" href="/services/strategic_business_unit">Strategic Business Unit (SBU) Planning & Business Management</Link></li>
-                                    <li><Link class="dropdown-item" href="/services/business_valuation_services">Business Valuation Services</Link></li>
-                                    <li><Link class="dropdown-item" href="/services/financial_consulting">Financial Consulting</Link></li>
-                                    <li><Link class="dropdown-item" href="/services/financial_management_services">Financial Management Services</Link></li>
-                                    <li><Link class="dropdown-item" href="/services/data_analysis_services">Data Analysis Services</Link></li>
-                                    <li><Link class="dropdown-item" href="/services/implementation_of_new_accounting_system">Implementation of new accounting system (QB, Lawson, MIP, FE, or others)</Link></li>
+                                <ul className="dropdown-menu">
+                                    <li><Link className="dropdown-item" href="/services/grant_writing_service">Grant Writing Services</Link></li>
+                                    <hr className="dropdown-divider" />
+                                    <li><Link className="dropdown-item" href="/services/financial_and_managerial_accounting_service">Financial and Managerial Accounting</Link></li>
+                                    <hr className="dropdown-divider" />
+                                    <li><Link className="dropdown-item" href="/services/strategic_planning_services">Strategic Planning Services</Link></li>
+                                    <hr className="dropdown-divider" />
+                                    <li><Link className="dropdown-item" href="/services/strategic_business_unit">Strategic Business Unitt</Link></li>
+                                    <hr className="dropdown-divider" />
+                                    <li><Link className="dropdown-item" href="/services/business_valuation_services">Business Valuation</Link></li>
+                                    <hr className="dropdown-divider" />
+                                    <li><Link className="dropdown-item" href="/services/financial_consulting">Financial Consulting</Link></li>
+                                    <hr className="dropdown-divider" />
+                                    <li><Link className="dropdown-item" href="/services/financial_management_services">Financial Management</Link></li>
+                                    <hr className="dropdown-divider" />
+                                    <li><Link className="dropdown-item" href="/services/data_analysis_services">Data Analysis</Link></li>
+                                    <hr className="dropdown-divider" />
+                                    <li><Link className="dropdown-item" href="/services/implementation_of_new_accounting_system">Implementation of new accounting</Link></li>
                                 </ul>
                             </li>
                             <li class="navItem">
